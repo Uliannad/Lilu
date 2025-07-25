@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lilu | Catalog</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comfortaa', sans-serif;
+      background: linear-gradient(120deg, #f6f6f6, #d6d0c8);
+    }
+
+    header {
+      background-color: #fff;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .shop-link {
+      font-size: 18px;
+      color: #a83e5e;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .brand-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Pacifico', cursive;
+    font-size: 42px;
+    color: #a83e5e;
+    text-decoration: none;
+    }
+
+    .catalog-container {
+      padding: 30px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .category-slider {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+
+    .category-card {
+      width: 400px;
+      height: auto;
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      scroll-snap-align: start;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .category-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .category-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .category-label {
+      text-align: center;
+      padding: 10px;
+      background-color: #fff;
+      font-size: 18px;
+      color: #444;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+  <div class="shop-link">SHOP</div>
+  <div class="brand-name">Lilu</div>
+  <div style="width: 50px;"></div> <!-- spacer for alignment -->
+    </header>
+
+  <main class="catalog-container">
+    <h2 class="section-title">Choose a bouquet category</h2>
+
+    <div class="category-slider">
+      <a href="catalog-low.html" class="category-card">
+        <img src="cheap.jpg" alt="Budget Bouquets">
+        <div class="category-label">Under 3000 UAH</div>
+      </a>
+      <a href="catalog-mid.html" class="category-card">
+        <img src="medium.jpg" alt="Mid-Range Bouquets">
+        <div class="category-label">3000-5000 UAH</div>
+      </a>
+      <a href="catalog-premium.html" class="category-card">
+        <img src="premium.jpg" alt="Premium Bouquets">
+        <div class="category-label">5000-10000 UAH</div>
+      </a>
+      <a href="catalog-lux.html" class="category-card">
+        <img src="lux.jpg" alt="Luxury Bouquets">
+        <div class="category-label">10000+ UAH</div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Lilu Flower Shop. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

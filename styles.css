@@ -1,0 +1,108 @@
+body {
+    font-family: 'Tenor', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-image: url('https://i.pinimg.com/1200x/67/9c/79/679c79db235cd76084ed70e439045965.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+}
+
+.flag {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
+
+.red-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+main {
+    padding: 0;
+}
+.main-background {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgGrouf7_LiDINVotXoWB575hPy8F1jgvXQ&s') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(70%);
+}
+
+section h2, section p {
+    color: white;
+    z-index: 1;
+    max-width: 600px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}

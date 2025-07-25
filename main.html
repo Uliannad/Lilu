@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        body {
+            font-family: 'Comfortaa', sans-serif;
+            background: linear-gradient(120deg, #f6f6f6, #d6d0c8);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+      header {
+      background-color: #fff;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .shop-link {
+      font-size: 18px;
+      color: #a83e5e;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .brand-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Pacifico', cursive;
+    font-size: 42px;
+    color: #a83e5e;
+    text-decoration: none;
+    }
+
+
+
+
+        .banner {
+        width: 100%;
+        height: 750px;
+        background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2Q1cWl1aWpvOG51aDE4bGZkbG1rdHlhNzJlNGEwcTM3b2F2d2xlNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JqCoaKFJml1OIjqQhd/giphy.gif");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        }
+
+
+
+
+        .banner-title {
+            font-family: 'Ballet', cursive;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 54px;
+            color: #732432;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .banner a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #a83e5e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .banner a:hover {
+            background-color: #7e2540;
+            transform: scale(1.1);
+        }
+        .content {
+            padding: 20px 10px;
+            text-align: center;
+        }
+        .content h2 {
+            margin-top: 0;
+            color: #292219;
+            font-size: 2em;
+        }
+        .insta-gallery {
+        text-align: center;
+        padding: 50px 20px;
+        }
+
+        .insta-gallery heading in h2 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 48px;
+        margin-bottom: 30px;
+        color: #333;
+        }
+
+        .gallery-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        }
+
+        .insta-card {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 200px;
+        height: 260px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        }
+
+        .insta-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+        }
+
+        .insta-card:hover img {
+        transform: scale(1.1);
+        }
+
+        .overlay {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+        color: #fff;
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        }
+
+        .insta-card:hover .overlay {
+        opacity: 1;
+        }
+
+        .follow {
+        margin-top: 30px;
+          font-size: 18px;
+          color: #555;
+        }
+
+        .follow a {
+          color: #888;
+          text-decoration: underline;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .text-content {
+            flex: 1 1 55%;
+            min-width: 300px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .text-content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #292219;
+        }
+
+        .text-content p {
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .photos {
+            flex: 1 1 40%;
+            min-width: 280px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .photos img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .photos img:hover {
+            transform: scale(1.03);
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .text-content, .photos {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+
+            .text-content h1 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+  <div class="shop-link">SHOP</div>
+  <div class="brand-name">Lilu</div>
+  <div style="width: 50px;"></div> <!-- spacer for alignment -->
+    </header>
+
+    <main>
+        <section class="banner">
+            <div>
+               <h2 class="banner-title">"Let the flowers finish your sentence."</h2>
+
+                <a href="{{ url_for('static', filename='cataloge.html')}}">SHOP NOW</a>
+            </div>
+        </section>
+        <section class="insta-gallery">
+            <strong> <h1>Lilu & you</h1> </strong>
+            <div class="gallery-grid">
+                <div class="insta-card">
+                <img src="{{ url_for('static', filename='review7.jpg')}}" alt="1">
+                <div class="overlay">@melony.gro</div>
+            </div><div class="insta-card">
+                <img src="{{ url_for('static', filename='review2.jpg')}}" alt="2" />
+                <div class="overlay">@susaaany</div>
+            </div>
+             <div class="insta-card">
+                <img src="{{ url_for('static', filename='review3.jpg')}}" alt="3" />
+                <div class="overlay">@eliza_daon</div>
+            </div>
+            <div class="insta-card">
+                <img src="{{ url_for('static', filename='review4.jpg')}}" alt="4" />
+                <div class="overlay">@my_kreesten</div>
+            </div>
+                <div class="insta-card">
+                <img src="{{ url_for('static', filename='review5.jpg')}}" alt="5" />
+                <div class="overlay">@maya.basol</div>
+            </div>
+            <div class="insta-card">
+                <img src="{{ url_for('static', filename='review6.jpg')}}" alt="6" />
+                <div class="overlay">@reremay</div>
+            </div>
+
+
+        </div>
+            <p class="follow">Follow us <a href="#">@flowershop_Lilu</a></p>
+    </section>
+
+        <section class="about-container">
+  <div class="text-content">
+    <h1>About Lilu</h1>
+    <p>Lilu began as a heartfelt idea between two best friends — Lisa and Ulia. We’ve always shared a love for flowers, beautiful details, and creating moments that matter. One day, over coffee and endless dreams, we decided to turn that love into something real.</p>
+
+    <p>The name <strong>Lilu</strong> comes from the combination of our names — a symbol of our friendship and shared vision. From the very beginning, we built everything ourselves: picking flowers at dawn, arranging our first bouquets late into the night, wrapping each order with laughter and care.</p>
+
+    <p>Every bouquet we create is more than just flowers — it's a message, a mood, a memory. We believe that flowers can speak when words fall short, and every petal carries meaning.</p>
+
+    <p>Through ups and downs, busy seasons and quiet mornings, we’ve stood side by side — two friends with a passion, growing something beautiful together.</p>
+
+    <p>Our studio is our second home, and every arrangement that leaves it carries a piece of our heart — and hopefully, a bit of magic.</p>
+
+    <p>To be continued…</p>
+
+    <p><strong>P.S.:</strong> Trust in your dream — and the people who dream it with you.</p>
+  </div>
+  <div class="photos">
+    <img src="{{ url_for('static', filename='about_us.png') }}" alt="we" />
+      <img src="{{ url_for('static', filename='about_us2.png') }}" alt="we" />
+
+
+
+  </div>
+</section>
+
+</body>
+    </main>
+    <footer>
+        <p>© 2025 Lilu Flower Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
